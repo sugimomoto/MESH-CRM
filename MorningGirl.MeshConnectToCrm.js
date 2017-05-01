@@ -3,7 +3,7 @@ if(typeof MorningGirl === "undefined"){
 }
 
 // Azure IoTに温度情報を送信するクラス
-// コンストラクタ
+// コンストラクタ 
 MorningGirl.AzureIot = function(){
         // MessageValueとプロパティの中身を検証
         this.CheckObjectValues(messageValues);
