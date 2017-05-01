@@ -28,6 +28,7 @@ MorningGirl.AzureIot = function(){
         this._requestUrl = "https://" + this._iotHubName + ".azure-devices.net/devices/" + this._deviceId + "/messages/events?" + this._apiVersion;
 }
 
+
 MorningGirl.AzureIot.prototype = {
     // IoT Hubにメッセージを送信
     SendIotHub : function(){
