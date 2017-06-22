@@ -33,10 +33,13 @@ MorningGirl.AzureIot.prototype = {
     // IoT Hubにメッセージを送信
     SendIotHub : function(){
             // IoT Hubに送信するオブジェクトを作成
-            var sendData = { 
+            var sendData = JSON.stringify({ 
                 "DeviceId": this._deviceId, 
-                "Temperature": this._temperature 
-            };
+                "Temperature": this._temperature,
+                "Humidity":null,
+                "ExternalTemperature":null,
+                "EventToken":"ebbcd4e5-4a69-4f78-861b-9e6e54862381"
+            });
 
             var requestHeaders = {
                 'X-HTTP-Method-Override': 'POST',
