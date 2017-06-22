@@ -38,7 +38,7 @@ MorningGirl.AzureIot.prototype = {
                 "Temperature": this._temperature,
                 "Humidity":null,
                 "ExternalTemperature":null,
-                "EventToken":"ebbcd4e5-4a69-4f78-861b-9e6e54862381"
+                "EventToken":Date.now()
             });
 
             var requestHeaders = {
